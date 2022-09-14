@@ -37,7 +37,9 @@ export default defineComponent({
                 <div class="k-detail-sites">
                     <div class="k-detail-sites-title"><i class="fa fa-link fa-flip-horizontal"></i>网站列表</div>
                     <ul class="k-detail-sites-content">
-                        <li><i class="fa fa-snowflake-o fa-spin"></i>博客</li>
+                        <li onClick={() => {
+                            window.open("https://kasuie.cc")
+                        }}><i class="fa fa-snowflake-o fa-spin"></i>博客</li>
                         <li><i class="fa fa-drupal"></i>Hoxe</li>
                         <li><i class="fa fa-connectdevelop"></i>导航</li>
                         <li><i class="fa fa-lightbulb-o"></i>群手册</li>
