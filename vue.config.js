@@ -1,13 +1,20 @@
+/*
+ * @Author: kasuie
+ * @Date: 2022-09-14 23:24:48
+ * @LastEditors: kasuie
+ * @LastEditTime: 2022-10-18 09:43:15
+ * @Description: 
+ */
 const path = require('path')
 
 module.exports = {
-    publicPath: '../',
+    // publicPath: '../',
     devServer: {
       /* 自动打开浏览器 */
       open: true,
       /* 设置为0.0.0.0则所有的地址均能访问 */
       host: '0.0.0.0',
-      port: 80,
+      port: 8086,
       https: false,
       hotOnly: false,
       /* 使用代理 */
