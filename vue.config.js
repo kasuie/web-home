@@ -2,13 +2,16 @@
  * @Author: kasuie
  * @Date: 2022-09-14 23:24:48
  * @LastEditors: kasuie
- * @LastEditTime: 2022-10-18 09:43:15
+ * @LastEditTime: 2022-11-09 16:14:20
  * @Description: 
  */
 const path = require('path')
 
 module.exports = {
-    // publicPath: '../',
+    /** 基本路径  */
+    publicPath: process.env.NODE_ENV === 'production' ? '../' : '/',
+    /** 构建时的输出目录  */
+    outputDir: "home",
     devServer: {
       /* 自动打开浏览器 */
       open: true,
@@ -38,15 +41,5 @@ module.exports = {
 	        args[0].title= 'KASUIEの次元'
 	        return args
 	      })
-	},
-	
-	// pwa: {
-	//     iconPaths: {
-	//       favicon32: 'favicon.ico',
-	//       favicon16: 'favicon.ico',
-	//       appleTouchIcon: 'favicon.ico',
-	//       maskIcon: 'favicon.ico',
-	//       msTileImage: 'favicon.ico'
-	//     }
-	// },
-  }
+	}
+}
