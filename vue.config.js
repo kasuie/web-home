@@ -2,7 +2,7 @@
  * @Author: kasuie
  * @Date: 2022-09-14 23:24:48
  * @LastEditors: kasuie
- * @LastEditTime: 2022-11-09 16:14:20
+ * @LastEditTime: 2022-11-09 17:49:42
  * @Description: 
  */
 const path = require('path')
@@ -10,8 +10,8 @@ const path = require('path')
 module.exports = {
     /** 基本路径  */
     publicPath: process.env.NODE_ENV === 'production' ? '../' : '/',
-    /** 构建时的输出目录  */
-    outputDir: "home",
+    // /** 构建时的输出目录  */
+    // outputDir: "home",
     devServer: {
       /* 自动打开浏览器 */
       open: true,
