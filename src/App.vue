@@ -1,3 +1,10 @@
+<!--
+ * @Author: kasuie
+ * @Date: 2022-08-25 23:37:29
+ * @LastEditors: kasuie
+ * @LastEditTime: 2022-11-09 16:23:24
+ * @Description: 
+-->
 <template>
   <router-view/>
 </template>
@@ -39,6 +46,7 @@ body,html{
   text-align: center;
   color: #2c3e50;
   height: 100vh;
+  overflow: hidden;
 }
 
 #nav {

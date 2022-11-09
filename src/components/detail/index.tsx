@@ -1,3 +1,10 @@
+/*
+ * @Author: kasuie
+ * @Date: 2022-09-13 00:00:20
+ * @LastEditors: kasuie
+ * @LastEditTime: 2022-11-09 16:44:01
+ * @Description: 
+ */
 import { defineComponent, onMounted, reactive, ref } from "vue";
 import KTime from "@/components/time/index";
 import './index.less';
@@ -40,7 +47,9 @@ export default defineComponent({
                         <li onClick={() => {
                             window.open("https://kasuie.cc")
                         }}><i class="fa fa-snowflake-o fa-spin"></i>博客</li>
-                        <li><i class="fa fa-drupal"></i>Hoxe</li>
+                        <li onClick={() => {
+                            window.open("https://kasuie.github.io")
+                        }}><i class="fa fa-drupal"></i>Hoxe</li>
                         <li><i class="fa fa-connectdevelop"></i>导航</li>
                         <li><i class="fa fa-lightbulb-o"></i>群手册</li>
                         <li><i class="fa fa-paw"></i>壁纸</li>
